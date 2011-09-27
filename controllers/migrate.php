@@ -3,13 +3,13 @@ class Migrate extends CI_Controller
 {
 	function __construct()
 	{
-		parent::Controller();
+		parent::__construct();
 		$this->load->library('migrations');
 
 		$this->migrations->set_verbose(TRUE);
 
 		/** VERY IMPORTANT - only turn this on when you need it. */
-		show_error('Access to this controller is blocked, turn me on when you need me.');
+		// show_error('Access to this controller is blocked, turn me on when you need me.');
 	}
 
 	// Install up to the most up-to-date version.
